@@ -1,0 +1,165 @@
+<!--
+  Name: Isaac Xu, Jieyi Xu
+  Date: Dec 2
+  Section: CSE 154 AE
+
+  This is the webpage of the pokezon, having the login page, homepage, transaction
+  page and item detail page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>Pokezon :)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+    <script src='index.js'></script>
+  </head>
+  <body>
+    <header class="hidden">
+      <img class='small-pic' id='logo' src='img/logo.png' alt='Pokezon'>
+      <div><p id='trainer-name'></p></div>
+      <div id='search'>
+        <input id='search-term' type='text'>
+        <button id='search-btn' disabled>search</button>
+      </div>
+      <button id='prev'>View Previous Transaction</button>
+      <button id='toggle'>switch layout</button>
+    </header>
+    <main>
+      <!-- login view -->
+      <section id='login-page'>
+        <article>
+          <img class='small-pic' src='img/logo.png' alt='Pokezon'>
+          <form id='login' class='form'>
+            <h2>Please Login to browse our amazing pokemon items!</h2>
+            <input type='text' id='name' name='name' placeholder="Enter Your Name" required>
+            <input type='password' id='password' name='password' placeholder="Enter Your Password"
+            required>
+            <p>New user? <span class='u'>Create new account!</span></p>
+            <button>Submit!</button>
+          </form>
+        </article>
+      </section>
+
+      <!-- home view -->
+      <section id='home' class='hidden'>
+        <select id='poketype' name='type'>
+          <option value='all'>All types</option>
+          <option value='fire'>Fire</option>
+          <option value='dragon'>Dragon</option>
+          <option value='grass'>Grass</option>
+          <option value='flying'>Flying</option>
+          <option value='fairy'>Fairy</option>
+          <option value='psychic'>Psychic</option>
+          <option value='posion'>Posion</option>
+          <option value='ghost'>Ghost</option>
+          <option value='rock'>Rock</option>
+          <option value='steel'>Iron</option>
+          <option value='normal'>Normal</option>
+          <option value='dark'>Dark</option>
+        </select>
+        <button id='select-type'>Go!</button>
+      </section>
+
+      <section id='search-page' class='hidden'>
+      </section>
+
+      <!-- singel item view -->
+      <section id='poke' class='hidden'>
+      </section>
+
+      <section id='review-page' class='hidden'>
+      </section>
+
+      <!-- confirmation view -->
+      <section id='confirm' class='hidden'>
+        <h2 class='title'>Confirmation Page</h2>
+        <article id='confirm-page'></article>
+      </section>
+
+      <!-- transaction view -->
+      <section id='transaction' class='hidden'>
+        <div>
+          <h2>Choose your payment method</h2>
+          <select id='paymenttype' name='pay'>
+            <option value='Choose payment method' label='Choose payment method'></option>
+            <option value='wallet'>Pokezon Wallet</option>
+          </select>
+          <p id='balance'></p>
+          <form id='checkout-form' class='form'>
+          　<p>By checking on the checkbox, you agree with our
+            <span class='u' id='terms'>terms and conditions</span></p>
+            <input type='checkbox' required id='terms-checkbox'>
+            <button id='checkout-btn' disabled>Checkout!</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- previous transaction -->
+      <section id='prevs' class='hidden'>
+      </section>
+
+      <!-- transaction done -->
+      <section id='confirmed' class='hidden'>
+        <div>
+          <h2>
+            Thank you for your purchase! your item will be shipped to you hopefully soon!
+          </h2>
+          <form class='form' id='review-form'>
+            <h3>Want to write a review?:</h3>
+            <label for='name'>Score: </label>
+            <input type='text' id='score' name='score' placeholder="any score you want!" required>
+            <label for='review'>Review: </label>
+            <input type='text' id='review' name='review' placeholder="Enter your review!" required>
+            <p></p>
+            <button>Submit!</button>
+          </form>
+          <button id='back-from-done'>Back to Home</button>
+        </div>
+      </section>
+
+      <!-- terms and conditions -->
+      <section id='terms-page' class='hidden'>
+        <h2>Terms and Conditions</h2>
+        <ul>
+          <li>
+            Upon purchase, you are informed that all our items are breaded in brutal
+            environment.
+          </li>
+          <li>
+            We are allowed to implant bomb inside all of our items, once you refuse our
+            job request, we will explode the item sold to you as a punishment.
+          </li>
+          <li>
+            Though we provided you ten coins as starter fund, we will deduct 500$
+            from your bank account as delivery and handling fee.
+          </li>
+        </ul>
+        <button id='back-to-checkout'>Continue Checkout</button>
+      </section>
+
+
+      <section id='newuser' class='hidden'>
+        <div>
+          <form id='newuser-form' class='form'>
+            <h2>Welcome to pokezon! Create your account here!</h2>
+            <input type='text' id='newname' name='name' placeholder="Enter Your Name" required>
+            <input type='text' id='newpassword' name='password' placeholder="Enter Your Password"
+            required>
+            <p></p>
+            <button>Submit!</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- error view -->
+      <section  id='error' class='hidden'>
+        <h2>
+          We might be under attack of pokemon protectors, not sure if we are going to
+          be back later， but try refreshing!
+        </h2>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+/*
+  Name: Isaac Xu, Jieyi Xu
+  Date: Dec 2
+  Section: CSE 154 AE
+
+  This set the style of the webpage, like the background, layouts of all views,
+  apperence of items, etc
+*/
+
+header,
+#search,
+.form,
+#login-page article,
+#newuser div,
+#transaction div,
+#review-page div,
+.thisPoke,
+.checkout-item,
+.onemove,
+#poke-container,
+.pricebox,
+.history {
+  display: flex;
+}
+
+header {
+  justify-content: space-evenly;
+  background-color: gray;
+  height: 10vh;
+}
+
+html, #search-term, .checkout-item {
+  width: 100%;
+}
+
+.title {
+  margin-left: 45%;
+}
+
+button {
+  font-size: 10px;
+  padding: 10px 24px;
+  border-radius: 12px;
+  background-color: white;
+  border: 2px solid red;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(188, 236, 222);
+}
+
+header div, .nameTag {
+  margin-top: 10px;
+}
+
+header div {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body,
+main,
+#login-page article,
+#newuser div,
+#transaction div,
+#review-page div {
+  height: inherit;
+}
+
+body, main {
+  width: inherit;
+  margin: 0px;
+}
+
+.small-pic {
+  width: 70px;
+}
+
+#home, #poke {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#search-btn, html {
+  height: 100%;
+}
+
+.checkout-item,
+#search,
+.form,
+#login-page article,
+#newuser div,
+#transaction div,
+#review-page div {
+  justify-content: center;
+}
+
+#search {
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form, #search {
+  width: 60%;
+}
+
+.form, #login-page article, #newuser div, #transaction div, #review-page div {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form, .pokecard {
+  height: 300px;
+}
+
+.form {
+  background-color: lightslategrey;
+}
+
+#review-page div, .form {
+  margin-top: 200px;
+}
+
+body {
+  background-image: url("img/bg-4.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form input {
+  width: 40vw;
+  height: 35px;
+}
+
+form input, form button, .movenumber {
+  margin: 10px;
+}
+
+form button {
+  width: 100px;
+}
+
+#home, .relative, .pokecard, body, main {
+  position: relative;
+}
+
+.left {
+  margin-left: 100px;
+}
+
+.right {
+  margin-right: 100px;
+}
+
+.poketype, .pokename, .pokepic {
+  position: absolute;
+}
+
+.pokename {
+  text-decoration: underline;
+  right: 20%;
+  top: 25%;
+}
+
+.pokepic {
+  top: 10%;
+  bottom: 10%;
+  left: 5%;
+}
+
+.pokecard, .move {
+  background-color: sandybrown;
+}
+
+.pokecard {
+  width: 700px;
+  margin: 25px;
+}
+
+.other-mode {
+  width: 1400px;
+}
+
+.poketype {
+  height: 20%;
+  bottom: 0px;
+  right: 0px;
+}
+
+.thisPoke, #poke-container, .history {
+  justify-content: space-around;
+}
+
+.not-much {
+  color: tomato;
+}
+
+.not-much, .planty {
+  font-size: 20px;
+}
+
+.planty {
+  color: yellowgreen;
+}
+
+select, button, .small-pic {
+  height: 50px;
+}
+
+.checkout-item {
+  border-style: ridge;
+  border-color: white;
+  align-items: center;
+  align-content: center;
+  border-width: 10px;
+  height: 170px;
+}
+
+.checkout-pic, .pokepic {
+  height: 80%;
+}
+
+.checkout-text {
+  margin-left: 10%;
+}
+
+.movebox {
+  margin-top: 100px;
+}
+
+.move {
+  border-style: inset;
+  margin-top: 5px;
+}
+
+.pokename, .move {
+  font-size: 40px;
+}
+
+.onemove {
+  margin: 5px;
+}
+
+.movenumber, .price {
+  font-size: 30px;
+}
+
+.pricebox, .onemove, .checkout-item, .thisPoke {
+  flex-direction: row;
+}
+
+.price {
+  color: rgb(167, 12, 12);
+}
+
+.pricep {
+  font-size: 15px;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+#poke-container {
+  flex-wrap: wrap;
+}
+
+#error {
+  padding: 50px, 50px;
+}
+
+.u {
+  color: blue;
+  text-decoration: underline;
+}
+
+.u:hover, .pricep {
+  color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
+.nameTag {
+  font-size: 60px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.history {
+  background-color: skyblue;
+  font-weight: 50;
+}
+
+.pokename, .history, .nameTag {
+  font-family: 'Kalam', cursive;
+}
